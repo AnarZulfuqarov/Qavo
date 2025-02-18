@@ -22,9 +22,7 @@ const ProductDetail = () => {
           <p>{findProduct?.category}</p>
           <p>{findProduct?.description}</p>
           <p>Price: ${findProduct?.price}</p>
-          {/* <button >Add to Cart</button> */}
-        </div>
-    
+        </div>    
     </div>
   </div>;
 };

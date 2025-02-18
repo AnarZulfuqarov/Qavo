@@ -36,10 +36,11 @@ const Dashboard = () => {
                 <td>{product.id}</td>
                 <td>{product.title}</td>
                 <td>{product.price}</td>
-                {/* <td>{product.rating.count} ⭐{product.rating.rate}</td> */}
+                <td>{product.rating.count} ⭐{product.rating.rate}</td>
                 <td>
                   <button className="btn btn-warning mr-2" onClick={()=>navigate(`/product/${product.id}`)}>Detail</button>
                   <button className="btn btn-danger" onClick={()=>dispatch(deleteProduct(product.id))}>Delete</button>
+                  <button className="btn btn-info" onClick={()=>navigate(`/update/${product.id}`)}>Edit</button>
                 </td>
               </tr>
             ))

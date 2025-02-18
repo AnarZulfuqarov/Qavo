@@ -28,6 +28,13 @@ export const addProduct = createAsyncThunk(
         return res.data;
     }
 )
+export const updateProduct = createAsyncThunk(
+    "products/updateProduct",
+    async (product) => {
+        const res = await axios.put(`${baseUrl}/${product.id}`, product)
+        return res.data;
+    }
+)
 
 const productSlice = createSlice(
     {

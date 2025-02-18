@@ -24,7 +24,6 @@ const Add = () => {
       const handleAddProduct = (e) => {
         e.preventDefault();
         dispatch(addProduct(formData));
-        // handleClose();
         setFormData({
           image: "",
           title: "",
@@ -143,7 +142,7 @@ const Add = () => {
                         className="form-control"
                         type="number"
                         id="count"
-                        name="rating"
+                        name="count"
                         placeholder="Count"
                         required
                         value={formData.rating.count}
